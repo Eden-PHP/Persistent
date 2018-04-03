@@ -1,13 +1,13 @@
 <?php //-->
 /*
- * This file is part of the System package of the Eden PHP Library.
+ * This file is part of the Persistent package of the Eden PHP Library.
  * (c) 2013-2014 Openovate Labs
  *
  * Copyright and license information can be found at LICENSE
  * distributed with this package.
  */
 
-namespace Eden\System;
+namespace Eden\Persistent;
 
 use Eden\Core\Exception as CoreException;
 
@@ -20,7 +20,7 @@ use Eden\Core\Exception as CoreException;
  * started to where the program stopped.
  *
  * @vendor Eden
- * @package System
+ * @package Persistent
  * @author Christian Blanquera cblanquera@openovate.com
  */
 class Exception extends CoreException

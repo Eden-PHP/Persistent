@@ -1,7 +1,7 @@
 {
-    "name": "eden/system",
+    "name": "eden/persistent",
     "type": "library",
-    "description": "Eden file and folder component",
+    "description": "Eden Session and Cookie component",
     "keywords": ["eden", "library"],
     "homepage": "http://eden-php.com",
     "license": "MIT",
@@ -13,11 +13,11 @@
     ],
     "require": {
         "php": ">=5.3.1",
-		"eden/core": "1.*",
-		"eden/type": "1.*"
+		"eden/core": "1.*",    
+        "eden/type": "1.*"
     },
     "autoload": {
-         "psr-0": { "Eden\\System\\": "" }
+         "psr-0": { "Eden\\Persistent\\": "" }
     },
-	"target-dir": "Eden/System"
+	"target-dir": "Eden/Persistent"
 }

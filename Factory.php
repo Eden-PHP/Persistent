@@ -1,19 +1,19 @@
 <?php //-->
 /*
- * This file is part of the System package of the Eden PHP Library.
+ * This file is part of the Core package of the Eden PHP Library.
  * (c) 2013-2014 Openovate Labs
  *
  * Copyright and license information can be found at LICENSE
  * distributed with this package.
  */
 
-namespace Eden\System;
+namespace Eden\Persistent;
 
 /**
  * Core Factory Class
  *
  * @vendor Eden
- * @package System
+ * @package Core
  * @author Christian Blanquera cblanquera@openovate.com
  */
 class Factory extends Base
@@ -21,44 +21,22 @@ class Factory extends Base
     const INSTANCE = 1;
 	
 	/**
-     * Returns the file class
+     * Returns the cookie class
      *
-	 * @param string
-     * @return Eden\System\File
+     * @return Eden\Persistent\Cookie
      */
-    public function file($path)
+    public function cookie()
     {
-		//argument 1 must be a string
-		Argument::i()->test(1, 'string');
-		
-        return File::i($path);
+        return Cookie::i();
     }
 	
 	/**
-     * Returns the folder class
+     * Returns the oauth2 class
      *
-	 * @param string
-     * @return Eden\System\Folder
+     * @return Eden\Persistent\Session
      */
-    public function folder($path)
+    public function session()
     {
-		//argument 1 must be a string
-		Argument::i()->test(1, 'string');
-		
-        return Folder::i($path);
-    }
-	
-	/**
-     * Returns the path class
-     *
-	 * @param string
-     * @return Eden\System\Path
-     */
-    public function path($path)
-    {
-		//argument 1 must be a string
-		Argument::i()->test(1, 'string');
-		
-        return Path::i($path);
+        return Session::i();
     }
 }

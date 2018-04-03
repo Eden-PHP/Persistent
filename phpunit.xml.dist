@@ -12,8 +12,8 @@
          bootstrap="Tests/bootstrap.php"
 >
   <testsuites>
-    <testsuite name="Eden System Test Suite">
-      <directory>./Tests/System</directory>
+    <testsuite name="Eden Persistent Test Suite">
+      <directory>./Tests/Persistent</directory>
     </testsuite>
   </testsuites>
 
